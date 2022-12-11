@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pages",
+  "info": {
+    "name": "page"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "locales": {
+      "collection": "page-locale",
+      "via": "page"
+    },
+    "slug": {
+      "type": "string",
+      "private": false,
+      "required": true,
+      "unique": true
+    }
+  }
+}

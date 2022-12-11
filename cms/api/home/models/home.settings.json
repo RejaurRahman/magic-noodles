@@ -1,0 +1,19 @@
+{
+  "kind": "singleType",
+  "collectionName": "homes",
+  "info": {
+    "name": "home"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "services": {
+      "type": "component",
+      "repeatable": false,
+      "component": "default.card-container",
+      "required": true
+    }
+  }
+}

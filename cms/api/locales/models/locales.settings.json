@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "locales",
+  "info": {
+    "name": "locales"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "label": {
+      "type": "enumeration",
+      "enum": ["en", "zh"],
+      "unique": true,
+      "default": "zh",
+      "required": false
+    },
+    "post_locales": {
+      "via": "locale",
+      "collection": "post-locale"
+    },
+    "page_locales": {
+      "via": "locale",
+      "collection": "page-locale"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "post_locales",
+  "info": {
+    "name": "postLocale"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "post": {
+      "model": "post",
+      "via": "locales"
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "locale": {
+      "model": "locales",
+      "via": "post_locales"
+    }
+  }
+}

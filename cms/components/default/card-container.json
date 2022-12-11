@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_default_card_containers",
+  "info": {
+    "name": "CardContainer",
+    "icon": "columns"
+  },
+  "options": {},
+  "attributes": {
+    "items": {
+      "type": "component",
+      "repeatable": true,
+      "component": "default.card",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "page_locales",
+  "info": {
+    "name": "pageLocale"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "locale": {
+      "model": "locales",
+      "via": "page_locales"
+    },
+    "page": {
+      "via": "locales",
+      "model": "page"
+    }
+  }
+}
